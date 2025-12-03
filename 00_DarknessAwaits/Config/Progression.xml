@@ -1,0 +1,219 @@
+<configs>
+	<set xpath = "/progression">		
+	
+	<level max_level="300" exp_to_level="9545" experience_multiplier="1.05" skill_points_per_level="1" clamp_exp_cost_at_level="60"/>
+
+<!--==============================================================================================================================================================================================-->	
+<!--============================================================================     ATTRIBUTES     ==============================================================================================-->	
+<!--==============================================================================================================================================================================================-->	
+
+
+	<attributes min_level="0" max_level="20" base_skill_point_cost="0" cost_multiplier_per_level="0">
+		<attribute name="r13BluntAtt" name_key="r13BluntAttName" desc_key="r13BluntAttDesc" icon="ui_game_symbol_club"><effect_group></effect_group></attribute>
+		<attribute name="r13BladeAtt" name_key="r13BladeAttName" desc_key="r13BladeAttDesc" icon="ui_game_symbol_deep_cuts"><effect_group></effect_group></attribute>
+		<attribute name="r13PierceAtt" name_key="r13PierceAttName" desc_key="r13PierceAttDesc" icon="ui_game_symbol_spear"><effect_group></effect_group></attribute>
+
+        <attribute name="attBooks" name_key="attBooks" desc_key="attBooks" icon="ui_game_symbol_book" min_level="0" max_level="0" base_skill_point_cost="0"/>
+
+<!--	<attribute name="izpOffensiveSkills" name_key="izpOffensiveSkillsName" desc_key="izpOffensiveSkillsDesc" icon="ui_game_symbol_club"><effect_group></effect_group></attribute> -->
+<!--	<attribute name="izpUtilitySkills" name_key="izpUtilitySkillsName" desc_key="izpUtilitySkillsDesc" icon="ui_game_symbol_tool"><effect_group></effect_group></attribute> -->
+<!--	<attribute name="izpMeleePerks" name_key="izpMeleePerksName" desc_key="izpMeleePerksDesc" icon="ui_game_symbol_sledge"><effect_group></effect_group></attribute> -->
+<!--	<attribute name="izpRangedPerks" name_key="izpRangedPerksName" desc_key="izpRangedPerksDesc" icon="ui_game_symbol_marksmanship"><effect_group></effect_group></attribute> -->
+<!--	<attribute name="izpMentalPerks" name_key="izpMentalPerksName" desc_key="izpMentalPerksDesc" icon="ui_game_symbol_intellect"><effect_group></effect_group></attribute> -->
+<!--	<attribute name="izpPhysicalPerks" name_key="izpPhysicalPerksName" desc_key="izpPhysicalPerksDesc" icon="ui_game_symbol_run"><effect_group></effect_group></attribute> -->
+<!--	<attribute name="izpResourcePerks" name_key="izpResourcePerksName" desc_key="izpResourcePerksDesc" icon="ui_game_symbol_mining"><effect_group></effect_group></attribute> -->
+<!--	<attribute name="izpCraftingPerks" name_key="izpCraftingPerksName" desc_key="izpCraftingPerksDesc" icon="ui_game_symbol_resource"><effect_group></effect_group></attribute> -->
+
+		
+	</attributes>
+<!--============================================================================================================================================================================================-->	
+<!--==============================================================================     SKILLS     ==============================================================================================-->	
+<!--============================================================================================================================================================================================-->	
+
+	<skills min_level="0" max_level="0"> <!-- not able to have levels? -->
+        <!--    MELEE   -->
+
+		<skill name="r13ClubSkill" parent="r13BluntAtt" name_key="r13ClubSkillName" desc_key="r13ClubSkillDesc" icon="ui_game_symbol_club"><effect_group/></skill>
+		<skill name="r13SledgeSkill" parent="r13BluntAtt" name_key="r13SledgeSkillName" desc_key="r13SledgeSkillDesc" icon="ui_game_symbol_sledge"><effect_group/></skill>
+		<skill name="r13BatonSkill" parent="r13BluntAtt" name_key="r13BatonSkillName" desc_key="r13BatonSkillDesc" icon="ui_game_symbol_electric_power"><effect_group/></skill>
+		<skill name="r13FistSkill" parent="r13BluntAtt" name_key="r13FistSkillName" desc_key="r13FistSkillDesc" icon="ui_game_symbol_boxer"><effect_group/></skill>
+
+<!--	<skill name="skillMeleeSkills" parent="izpOffensiveSkills" name_key="skillMeleeSkillsName" desc_key="skillMeleeSkillsDesc" icon="ui_game_symbol_boxer"><effect_group/></skill> -->
+<!--	<skill name="skillRangedSkills" parent="izpOffensiveSkills" name_key="skillRangedSkillsName" desc_key="skillRangedSkillsDesc" icon="ui_game_symbol_rifle"><effect_group/></skill> -->
+<!--	<skill name="skillMentalSkills" parent="izpUtilitySkills" name_key="skillMentalSkillsName" desc_key="skillMentalSkillsDesc" icon="ui_game_symbol_intellect"><effect_group/></skill> -->
+<!--	<skill name="skillPhysicalSkills" parent="izpUtilitySkills" name_key="skillPhysicalSkillsName" desc_key="skillPhysicalSkillsDesc" icon="ui_game_symbol_cardio"><effect_group/></skill> -->
+<!--	<skill name="skillResourceSkills" parent="izpUtilitySkills" name_key="skillResourceSkillsName" desc_key="skillResourceSkillsDesc" icon="ui_game_symbol_shopping_cart"><effect_group/></skill> -->
+<!--	<skill name="skillGeneralMeleePerks" parent="izpMeleePerks" name_key="skillGeneralMeleePerksName" desc_key="skillGeneralMeleePerksDesc" icon="ui_game_symbol_muscle"><effect_group/></skill> -->
+<!--	<skill name="skillBluntPerks" parent="izpMeleePerks" name_key="skillBluntPerksName" desc_key="skillBluntPerksDesc" icon="ui_game_symbol_club"><effect_group/></skill> -->
+<!--	<skill name="skillBladePerks" parent="izpMeleePerks" name_key="skillBladePerksName" desc_key="skillBladePerksDesc" icon="ui_game_symbol_deep_cuts"><effect_group/></skill> -->
+<!--	<skill name="skillPiercingPerks" parent="izpMeleePerks" name_key="skillPiercingPerksName" desc_key="skillPiercingPerksDesc" icon="ui_game_symbol_spear"><effect_group/></skill> -->
+<!--	<skill name="skillGeneralRangedPerks" parent="izpRangedPerks" name_key="skillGeneralRangedPerksName" desc_key="skillGeneralRangedPerksDesc" icon="ui_game_symbol_marksmanship"><effect_group/></skill> -->
+<!--	<skill name="skillPistolPerks" parent="izpRangedPerks" name_key="skillPistolPerksName" desc_key="skillPistolPerksDesc" icon="ui_game_symbol_pistol"><effect_group/></skill> -->
+<!--	<skill name="skillShotgunPerks" parent="izpRangedPerks" name_key="skillShotgunPerksName" desc_key="skillShotgunPerksDesc" icon="ui_game_symbol_shotgun"><effect_group/></skill> -->
+<!--	<skill name="skillRiflePerks" parent="izpRangedPerks" name_key="skillRiflePerksName" desc_key="skillRiflePerksDesc" icon="ui_game_symbol_marksmanship"><effect_group/></skill> -->
+<!--	<skill name="skillAutoRiflePerks" parent="izpRangedPerks" name_key="skillAutoRiflePerksName" desc_key="skillAutoRiflePerksDesc" icon="ui_game_symbol_rifle"><effect_group/></skill> -->
+<!--	<skill name="skillArcheryPerks" parent="izpRangedPerks" name_key="skillArcheryPerksName" desc_key="skillArcheryPerksDesc" icon="ui_game_symbol_archery"><effect_group/></skill> -->
+<!--	<skill name="skillGeneralPhysicalPerks" parent="izpPhysicalPerks" name_key="skillGeneralPhysicalPerksName" desc_key="skillGeneralPhysicalPerksDesc" icon="ui_game_symbol_add"><effect_group/></skill> -->
+<!--	<skill name="skillArmorPerks" parent="izpPhysicalPerks" name_key="skillArmorPerksName" desc_key="skillArmorPerksDesc" icon="ui_game_symbol_armor_iron"><effect_group/></skill> -->
+<!--	<skill name="skillStealthPerks" parent="izpPhysicalPerks" name_key="skillStealthPerksName" desc_key="skillStealthPerksDesc" icon="ui_game_symbol_bat"><effect_group/></skill> -->
+<!--	<skill name="skillSurvivalismPerks" parent="izpPhysicalPerks" name_key="skillSurvivalismPerksName" desc_key="skillSurvivalismPerksDesc" icon="ui_game_symbol_survival"><effect_group/></skill> -->
+<!--	<skill name="skillGeneralMentalPerks" parent="izpMentalPerks" name_key="skillGeneralMentalPerksName" desc_key="skillGeneralMentalPerksDesc" icon="ui_game_symbol_intellect"><effect_group/></skill> -->
+<!--	<skill name="skillSpeechPerks" parent="izpMentalPerks" name_key="skillSpeechPerksName" desc_key="skillSpeechPerksDesc" icon="ui_game_symbol_barter"><effect_group/></skill> -->
+<!--	<skill name="skillExplosivesPerks" parent="izpMentalPerks" name_key="skillExplosivesPerksName" desc_key="skillExplosivesPerksDesc" icon="ui_game_symbol_explosion"><effect_group/></skill> -->
+<!--	<skill name="skillRoboticsPerks" parent="izpMentalPerks" name_key="skillRoboticsPerksName" desc_key="skillRoboticsPerksDesc" icon="ui_game_symbol_junk_turret"><effect_group/></skill> -->
+<!--	<skill name="skillMiningPerks" parent="izpResourcePerks" name_key="skillMiningPerksName" desc_key="skillMiningPerksDesc" icon="ui_game_symbol_mining"><effect_group/></skill> -->
+<!--	<skill name="skillSalvagingPerks" parent="izpResourcePerks" name_key="skillSalvagingPerksName" desc_key="skillSalvagingPerksDesc" icon="ui_game_symbol_wrench"><effect_group/></skill> -->
+<!--	<skill name="skillScavengingPerks" parent="izpResourcePerks" name_key="skillScavengingPerksName" desc_key="skillScavengingPerksDesc" icon="ui_game_symbol_hand"><effect_group/></skill> -->
+<!--	<skill name="skillAdvancedCraftingPerks" parent="izpCraftingPerks" name_key="skillAdvancedCraftingPerksName" desc_key="skillAdvancedCraftingPerksDesc" icon="ui_game_symbol_hammer"><effect_group/></skill> -->
+<!--	<skill name="skillMeleeCraftingPerks" parent="izpCraftingPerks" name_key="skillMeleeCraftingPerksName" desc_key="skillMeleeCraftingPerksDesc" icon="ui_game_symbol_spear"><effect_group/></skill> -->
+<!--	<skill name="skillRangedCraftingPerks" parent="izpCraftingPerks" name_key="skillRangedCraftingPerksName" desc_key="skillRangedCraftingPerksDesc" icon="ui_game_symbol_shotgun"><effect_group/></skill> -->
+<!--	<skill name="skillAmmoCraftingPerks" parent="izpCraftingPerks" name_key="skillAmmoCraftingPerksName" desc_key="skillAmmoCraftingPerksDesc" icon="ui_game_symbol_gunsmithing"><effect_group/></skill> -->
+<!--	<skill name="skillMiscCraftingPerks" parent="izpCraftingPerks" name_key="skillMiscCraftingPerksName" desc_key="skillMiscCraftingPerksDesc" icon="ui_game_symbol_wrench"><effect_group/></skill> -->
+
+    <!--===========================================================================     BOOKS     ==============================================================================================-->	
+
+		<book_group name="skillArtOfMining" parent="attBooks" name_key="perkArtOfMining0Name" desc_key="perkArtOfMining0Desc" long_desc_key="perkBookGroupLongDesc" icon="ui_game_symbol_mining"><effect_group/></book_group>
+		<book_group name="skillAutoWeapons" parent="attBooks" name_key="perkAutoWeapons0Name" desc_key="perkAutoWeapons0Desc" long_desc_key="perkBookGroupLongDesc" icon="ui_game_symbol_rifle"><effect_group/></book_group>
+		<book_group name="skillBatterUp" parent="attBooks" name_key="perkBatterUp0Name" desc_key="perkBatterUp0Desc" long_desc_key="perkBookGroupLongDesc" icon="ui_game_symbol_club"><effect_group/></book_group>
+		<book_group name="skillBarBrawling" parent="attBooks" name_key="perkBarBrawling0Name" desc_key="perkBarBrawling0Desc" long_desc_key="perkBookGroupLongDesc" icon="ui_game_symbol_boxer"><effect_group/></book_group>
+		<book_group name="skillFiremansAlmanac" parent="attBooks" name_key="perkFiremansAlmanac0Name" desc_key="perkFiremansAlmanac0Desc" long_desc_key="perkBookGroupLongDesc" icon="ui_game_symbol_fire"><effect_group/></book_group>
+		<book_group name="skillGreatHeist" parent="attBooks" name_key="perkGreatHeist0Name" desc_key="perkGreatHeist0Desc" long_desc_key="perkBookGroupLongDesc" icon="ui_game_symbol_safe"><effect_group/></book_group>
+		<book_group name="skillHuntingJournal" parent="attBooks" name_key="perkHuntingJournal0Name" desc_key="perkHuntingJournal0Desc" long_desc_key="perkBookGroupLongDesc" icon="ui_game_symbol_armor_leather"><effect_group/></book_group>
+		<book_group name="skillLuckyLooter" parent="attBooks" name_key="perkLuckyLooter0Name" desc_key="perkLuckyLooter0Desc" long_desc_key="perkBookGroupLongDesc" icon="ui_game_symbol_shopping_cart"><effect_group/></book_group>
+		<book_group name="skillEnforcer" parent="attBooks" name_key="perkEnforcer0Name" desc_key="perkEnforcer0Desc" long_desc_key="perkBookGroupLongDesc" icon="ui_game_symbol_gunslinger"><effect_group/></book_group>
+		<book_group name="skillNightStalker" parent="attBooks" name_key="perkNightStalker0Name" desc_key="perkNightStalker0Desc" long_desc_key="perkBookGroupLongDesc" icon="ui_game_symbol_sneak_attack"><effect_group/></book_group>
+		<book_group name="skillPistolPete" parent="attBooks" name_key="perkPistolPete0Name" desc_key="perkPistolPete0Desc" long_desc_key="perkBookGroupLongDesc" icon="ui_game_symbol_pistol"><effect_group/></book_group>
+		<book_group name="skillArchery" parent="attBooks" name_key="perkRangers0Name" desc_key="perkRangers0Desc" long_desc_key="perkBookGroupLongDesc" icon="ui_game_symbol_archery"><effect_group/></book_group>
+		<book_group name="skillShotguns" parent="attBooks" name_key="perkShotgunMessiah0Name" desc_key="perkShotgunMessiah0Desc" long_desc_key="perkBookGroupLongDesc" icon="ui_game_symbol_shotgun"><effect_group/></book_group>
+		<book_group name="skillSledgeSaga" parent="attBooks" name_key="perkSledgeSaga0Name" desc_key="perkSledgeSaga0Desc" long_desc_key="perkBookGroupLongDesc" icon="ui_game_symbol_sledge"><effect_group/></book_group>
+		<book_group name="skillSniper" parent="attBooks" name_key="perkSniper0Name" desc_key="perkSniper0Desc" long_desc_key="perkBookGroupLongDesc" icon="ui_game_symbol_long_shot"><effect_group/></book_group>
+		<book_group name="skillSpearHunter" parent="attBooks" name_key="perkSpearHunter0Name" desc_key="perkSpearHunter0Desc" long_desc_key="perkBookGroupLongDesc" icon="ui_game_symbol_spear"><effect_group/></book_group>
+		<book_group name="skillUrbanCombat" parent="attBooks" name_key="perkUrbanCombat0Name" desc_key="perkUrbanCombat0Desc" long_desc_key="perkBookGroupLongDesc" icon="ui_game_symbol_light_armor2"><effect_group/></book_group>
+		<book_group name="skillTechJunkie" parent="attBooks" name_key="perkTechJunkie0Name" desc_key="perkTechJunkie0Desc" long_desc_key="perkBookGroupLongDesc" icon="ui_game_symbol_electric_turret"><effect_group/></book_group>
+		<book_group name="skillWasteTreasures" parent="attBooks" name_key="perkWasteTreasures0Name" desc_key="perkWasteTreasures0Desc" long_desc_key="perkBookGroupLongDesc" icon="ui_game_symbol_treasure"><effect_group/></book_group>
+	</skills>
+
+<!--============================================================================================================================================================================================-->	
+<!--===============================================================================     PERKS     ==============================================================================================-->	
+<!--============================================================================================================================================================================================-->	
+
+	<perks min_level="0" max_level="100" base_skill_point_cost="1" cost_multiplier_per_level="1">               <!-- max_level_ratio_to_parent="100"> NOT NEEDED?? -->
+
+<!--===========================================================================++++     MELEE     ++++==========================================================================================-->
+
+    <!--=======================================================================~~~~     BLUNT     ~~~~==========================================================================================-->
+
+        <!--=======================================================================     CLUBS     ==============================================================================================-->
+
+
+			<perk name="r13ClubMasterSkill" parent="r13ClubSkill" name_key="r13ClubMasterSkillName" desc_key="r13ClubMasterSkillDesc" icon="ui_game_symbol_club" max_level="20">
+				<effect_group>
+					<passive_effect name="EntityDamage" operation="perc_add" level="1,20" value="0,.5" tags="blunt"/>
+					<effect_description level="1" desc_key="r13ClubMasterSkillRank1Desc" long_desc_key="r13ClubMasterSkillRank1LongDesc"/>
+					<effect_description level="2,100" desc_key="r13ClubMasterSkillRankDesc" long_desc_key="r13ClubMasterSkillRankLongDesc"/>
+					<triggered_effect trigger="onPerkLevelChanged" action="ModifyCVar" cvar="$actionXPBluntToNextLevel" operation="multiply" value="@$actionXPCurve"/>
+				</effect_group>
+			</perk>
+			<perk name="r13ClubT0Skill" parent="r13ClubSkill" name_key="r13ClubT0SkillName" desc_key="r13ClubT0SkillDesc" icon="ui_game_symbol_club" min_level="0">
+				<effect_group>
+					<passive_effect name="EntityDamage" operation="perc_add" level="1,100" value="0,5" tags="meleeWpnClubT0WoodenClub"/>
+					<passive_effect name="CraftingTier" operation="base_add" level="1,2,3,4,5" value="1,2,3,4,5" tags="meleeWpnClubT0WoodenClub"/>
+					<effect_description level="1" desc_key="r13ClubT0SkillRank1Desc" long_desc_key="r13ClubT0SkillRank1LongDesc"/>
+					<effect_description level="2,100" desc_key="r13ClubT0SkillRankDesc" long_desc_key="r13ClubT0SkillRankLongDesc"/>
+					<triggered_effect trigger="onPerkLevelChanged" action="ModifyCVar" cvar="$actionXPBluntToNextLevel" operation="multiply" value="@$actionXPCurve"/>
+				</effect_group>
+			</perk>
+			<perk name="r13ClubT1Skill" parent="r13ClubSkill" name_key="r13ClubT1SkillName" desc_key="r13ClubT1SkillDesc" icon="ui_game_symbol_club" min_level="0">
+				<effect_group>
+					<passive_effect name="EntityDamage" operation="perc_add" level="1,100" value="0,.5" tags="blunt"/>
+					<effect_description level="1" desc_key="r13ClubT1SkillRank1Desc" long_desc_key="r13ClubT1SkillRank1LongDesc"/>
+					<effect_description level="2,100" desc_key="r13ClubT1SkillRankDesc" long_desc_key="r13ClubT1SkillRankLongDesc"/>
+					<triggered_effect trigger="onPerkLevelChanged" action="ModifyCVar" cvar="$actionXPBluntToNextLevel" operation="multiply" value="@$actionXPCurve"/>
+				</effect_group>
+			</perk>
+			<perk name="r13ClubT2Skill" parent="r13ClubSkill" name_key="r13ClubT2SkillName" desc_key="r13ClubT2SkillDesc" icon="ui_game_symbol_club" min_level="0">
+				<effect_group>
+					<passive_effect name="EntityDamage" operation="perc_add" level="1,100" value="0,.5" tags="blunt"/>
+					<effect_description level="1" desc_key="r13ClubT2SkillRank1Desc" long_desc_key="r13ClubT2SkillRank1LongDesc"/>
+					<effect_description level="2,100" desc_key="r13ClubT2SkillRankDesc" long_desc_key="r13ClubT2SkillRankLongDesc"/>
+					<triggered_effect trigger="onPerkLevelChanged" action="ModifyCVar" cvar="$actionXPBluntToNextLevel" operation="multiply" value="@$actionXPCurve"/>
+				</effect_group>
+			</perk>
+			<perk name="r13ClubT3Skill" parent="r13ClubSkill" name_key="r13ClubT3SkillName" desc_key="r13ClubT3SkillDesc" icon="ui_game_symbol_club" min_level="0">
+				<effect_group>
+					<passive_effect name="EntityDamage" operation="perc_add" level="1,100" value="0,.5" tags="blunt"/>
+					<effect_description level="1" desc_key="r13ClubT3SkillRank1Desc" long_desc_key="r13ClubT3SkillRank1LongDesc"/>
+					<effect_description level="2,100" desc_key="r13ClubT3SkillRankDesc" long_desc_key="r13ClubT3SkillRankLongDesc"/>
+					<triggered_effect trigger="onPerkLevelChanged" action="ModifyCVar" cvar="$actionXPBluntToNextLevel" operation="multiply" value="@$actionXPCurve"/>
+				</effect_group>
+			</perk>
+
+        <!--=======================================================================    SLEDGE    ===============================================================================================-->
+
+
+
+        <!--=======================================================================    FISTS     ===============================================================================================-->
+
+
+
+        <!--=======================================================================    BATON     ===============================================================================================-->
+
+
+
+    <!--=======================================================================~~~~    BLADE     ~~~~===========================================================================================-->
+
+
+
+        <!--=======================================================================    KNIFE     ===============================================================================================-->
+
+
+
+        <!--=======================================================================    SWORD     ===============================================================================================-->
+
+
+
+        <!--=======================================================================    AXES      ===============================================================================================-->
+
+
+
+        <!--=======================================================================    SCYTHE    ===============================================================================================-->
+
+
+
+    <!--======================================================================~~~~     PIERCE    ~~~~===========================================================================================-->
+
+
+
+        <!--=======================================================================    SPEAR     ===============================================================================================-->
+
+
+
+        <!--=======================================================================    BOW       ===============================================================================================-->
+
+
+
+        <!--=======================================================================    CROSSBOW  ===============================================================================================-->
+
+
+
+        <!--=======================================================================  PICK/SHOVEL ===============================================================================================-->
+
+
+
+    <!--=======================================================================~~~~    THROWN    ~~~~===========================================================================================-->
+
+
+
+
+
+
+
+
+<!--============================================================================++++    FIREARMS  ++++==========================================================================================-->
+
+
+
+	</perks>
+	
+	</set>
+</configs>

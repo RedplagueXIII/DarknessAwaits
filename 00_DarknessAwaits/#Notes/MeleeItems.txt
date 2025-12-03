@@ -1,0 +1,60 @@
+
+Legendary Weapon list       
+    (2.X) Script's Melee Arsenal - Legendary Weapons
+    https://www.nexusmods.com/7daystodie/mods/3628?tab=description
+
+        Deep Cuts - Flurry of Agility:
+            Crimson Eclipse     (Katana)
+            Serpent's Edge      (Two-Handed Greatsword)
+            Runescar Blade      (Knife)
+            Grim Vortex         (Scythe)
+            Crimson Wrath       (Two-Handed Long Sword)
+            Glyphbound Dagger   (Knife)
+
+        Electrocutioner - Flurry of Intellect:
+            Brasswind Blade     (Stun Baton)
+            Clockwork Reaver    (Stun Baton)
+
+        Skull Crusher - Flurry of Strength:
+            Mjölnir's Echo      (Sledgehammer)
+            Reaper's Maul       (Sledgehammer)
+
+        Pummel Pete - Flurry of Strength:
+            Radiance            (Club)
+            Stonebound Hammer   (Club)
+
+        Javelin Master - Flurry of Perception:
+            Abyssal Reach       (Spear)
+            Ironwyrm            (Spear)
+
+        Brawler - Flurry of Fortitude:
+            Drakefang Gauntlet & Bloodveil Shield
+
+Blunt                                                   Name - Vanilla Code                        Name - My/Other Code                        Note
+    Attribute   r13BluntAtt
+    Skills      r13ClubSkill                                                                                                                   <!-- does not level -->
+                    r13ClubMasterSkill
+                    r13ClubT0Skill                      meleeWpnClubT0WoodenClub            <!-- Wooden Club -->
+                    r13ClubT1Skill                                                          <!-- Scrap Iron Club -->
+                    r13ClubT2Skill                      meleeWpnClubT1BaseballBat           <!-- Iron Club -->
+                    r13ClubT3Skill                      meleeWpnClubT3SteelClub                                                                <!-- Steel Club -->
+                    r13ClubT4Skill                                                          <!-- Legendary Club? -->
+                r13SledgeSkill                                                              <!-- does not level -->
+                    r13SledgeMasterSkill
+                    r13SledgeT0Skill                    meleeWpnSledgeT0StoneSledgehammer   <!-- Wooden Sledge -->
+                    r13SledgeT1Skill                                                        <!-- Scrap Iron Sledge -->
+                    r13SledgeT2Skill                    meleeWpnSledgeT1IronSledgehammer    <!-- Iron Sledge -->
+                    r13SledgeT3Skill                    meleeWpnSledgeT3SteelSledgehammer   <!-- Steel Sledge -->
+                    r13SledgeT4Skill                                                        <!-- Legendary Sledge? -->
+                r13BatonSkill                                                               <!-- does not level -->
+                    r13BatonMasterSkill
+                    r13BatonT0Skill                     meleeWpnBatonT0PipeBaton            <!-- Pipe Baton -->
+                    r13BatonT2Skill                     meleeWpnBatonT2StunBaton            <!-- Stun Baton? -->
+                r13FistSkill                                                                <!-- does not level -->
+                    r13FistMasterSkill
+                    r13FistT0Skill                      meleeWpnKnucklesT0LeatherKnuckles   <!-- Leather Knuckles -->
+                    r13FistT1Skill                                                          <!-- Scrap Iron Knuckles -->
+                    r13FistT2Skill                      meleeWpnKnucklesT1IronKnuckles      <!-- Iron Knuckles -->
+                    r13FistT3Skill                      meleeWpnKnucklesT3SteelKnuckles     <!-- Steel Knuckles -->
+                    r13FistT4Skill                                                          <!-- Legendary Knuckles? -->
+                Wrench/Hammer Melee Damage?
