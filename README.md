@@ -1,4 +1,4 @@
 # Darkness Awaits
 A 7 Days to Die mod in which the core spirit of vanilla is preset, but you learn by doing and the survival focus is increased.
 
-{add in some kind of readme}
+{add in some kind of readme - this file is just for GitHub}
